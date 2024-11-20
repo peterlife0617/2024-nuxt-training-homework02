@@ -1,0 +1,19 @@
+{
+  "Vue Basic Template": {
+    "scope": "vue",
+    "prefix": "!vue-basic",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "</script>",
+      "",
+      "<template>",
+      "  <div>${TM_FILENAME_BASE/([^.]+).*/${1:/pascalcase}/g}</div>",
+      "</template>",
+      "",
+      "<style scoped lang=\"scss\">",
+      "</style>",
+      ""
+    ],
+    "description": "Create a basic Vue component"
+  }
+}
