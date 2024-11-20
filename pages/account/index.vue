@@ -3,7 +3,7 @@ navigateTo('/account/login')
 </script>
 
 <template>
-  <div>Index</div>
+  <div />
 </template>
 
 <style scoped lang="scss">

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const route = useRoute()
+navigateTo(`/user/${route.params.userId}/profile`)
 </script>
 
 <template>

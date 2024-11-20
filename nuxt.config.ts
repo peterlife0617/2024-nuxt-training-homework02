@@ -11,4 +11,6 @@ export default defineNuxtConfig({
     },
   },
   modules: ['@nuxt/eslint'],
+  css: ['@/assets/styles/all.scss'],
+
 })
