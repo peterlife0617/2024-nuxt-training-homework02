@@ -572,11 +572,13 @@ function handleDateChange(bookingInfo: any) {
       </div>
     </section>
 
-    <RoomsDatePickerModal
-      ref="datePickerModal"
-      :date-time="bookingDate"
-      @handle-date-change="handleDateChange"
-    />
+    <ClientOnly>
+      <RoomsDatePickerModal
+        ref="datePickerModal"
+        :date-time="bookingDate"
+        @handle-date-change="handleDateChange"
+      />
+    </ClientOnly>
   </main>
 </template>
 
