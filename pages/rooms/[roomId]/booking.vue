@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import BookingLoading from '@/components/rooms/BookingLoading.vue'
 import { Icon } from '@iconify/vue'
 
 definePageMeta({
@@ -564,7 +563,7 @@ function confirmBooking() {
       </div>
     </section>
 
-    <BookingLoading v-if="isLoading" />
+    <RoomsBookingLoading v-if="isLoading" />
   </main>
 </template>
 
