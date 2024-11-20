@@ -101,10 +101,12 @@ onUnmounted(() => {
                     </NuxtLink>
                   </li>
                   <li>
-                    <a
+                    <NuxtLink
                       class="dropdown-item px-6 py-4"
-                      href="/account/login"
-                    >登出</a>
+                      to="/account/login"
+                    >
+                      登出
+                    </NuxtLink>
                   </li>
                 </ul>
               </div>
