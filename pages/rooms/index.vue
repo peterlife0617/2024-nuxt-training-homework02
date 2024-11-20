@@ -18,6 +18,8 @@ definePageMeta({
   name: 'rooms',
 })
 
+const { publicImage } = useImage()
+
 const modules = ref([Autoplay, Navigation, Pagination])
 
 const roomImages = computed(() => {
@@ -38,12 +40,6 @@ const roomImages = computed(() => {
 
   return result
 })
-
-const normalizeBaseUrl = (baseUrl: string) => baseUrl.replace(/\/$/, '')
-function publicImage(url: string) {
-  const baseUrl = normalizeBaseUrl(import.meta.env.NUXT_APP_BASE_URL ?? '/')
-  return baseUrl + url
-}
 </script>
 
 <template>
