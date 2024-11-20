@@ -27,8 +27,8 @@ const roomImages = computed(() => {
   const result = rooms.reduce<RoomImages>((acc, roomId) => {
     acc[`room${roomId.toUpperCase()}`] = nums.reduce<Images>((obj, num) => {
       obj[num] = {
-        desktop: `/images/room-${roomId}-${num}.png`,
-        mobile: `/images/room-${roomId}-sm-${num}.png`,
+        desktop: publicImage(`/images/room-${roomId}-${num}.png`),
+        mobile: publicImage(`/images/room-${roomId}-sm-${num}.png`),
       }
       return obj
     }, {})
@@ -38,6 +38,12 @@ const roomImages = computed(() => {
 
   return result
 })
+
+const normalizeBaseUrl = (baseUrl: string) => baseUrl.replace(/\/$/, '')
+function publicImage(url: string) {
+  const baseUrl = normalizeBaseUrl(import.meta.env.NUXT_APP_BASE_URL ?? '/')
+  return baseUrl + url
+}
 </script>
 
 <template>
