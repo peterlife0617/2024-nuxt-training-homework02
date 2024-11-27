@@ -350,18 +350,18 @@ function clearDate() {
 .date-picker :deep(.vc-primary) {
   --vc-accent-50: #f0f9ff;
   --vc-accent-100: #e0f2fe;
-  --vc-accent-200: #F9F9F9;
+  --vc-accent-200: #f9f9f9;
   --vc-accent-300: #7dd3fc;
   --vc-accent-400: #38bdf8;
   --vc-accent-500: #0ea5e9;
-  --vc-accent-600: #000000;
-  --vc-accent-700: #FFFFFF;
-  --vc-accent-800: #F9F9F9;
-  --vc-accent-900: #000000;
+  --vc-accent-600: #000;
+  --vc-accent-700: #fff;
+  --vc-accent-800: #f9f9f9;
+  --vc-accent-900: #000;
 }
 
 .date-picker :deep(.vc-container) {
-  --vc-font-family: : "Noto Serif TC", serif;
+  --vc-font-family: : 'Noto Serif TC', serif;
 }
 
 .date-picker :deep(.vc-pane-layout) {
@@ -373,10 +373,10 @@ function clearDate() {
 }
 
 .date-picker :deep(.vc-title) {
-  background-color: transparent;
-  color: #000000;
   font-size: 1.25rem;
   font-weight: bold;
+  color: #000;
+  background-color: transparent;
 }
 
 .date-picker :deep(.vc-arrow) {
@@ -394,24 +394,22 @@ function clearDate() {
   display: flex;
   flex-direction: column;
   gap: 4px;
-}
-
-.date-picker :deep(.vc-weeks) {
   padding: 0;
 }
 
 .date-picker :deep(.vc-weekday) {
-  --vc-weekday-color: #4B4B4B;
+  --vc-weekday-color: #4b4b4b;
+
+  padding: 12px 14px 8px;
   font-size: var(--vc-text-base);
   font-weight: 500;
-  padding: 12px 14px 8px 14px;
   line-height: unset;
 }
 
 .date-picker :deep(.vc-day-content) {
-  font-size: var(--vc-text-base);
   width: 44px;
   height: 44px;
+  font-size: var(--vc-text-base);
 }
 
 .date-picker :deep(.vc-highlight) {
@@ -420,6 +418,6 @@ function clearDate() {
 }
 
 .date-picker :deep(.vc-attr) {
-  --vc-highlight-outline-bg: #000000;
+  --vc-highlight-outline-bg: #000;
 }
 </style>

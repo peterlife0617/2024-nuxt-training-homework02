@@ -269,7 +269,9 @@ function slideNext() {
               <Icon
                 icon="mdi:arrow-left"
                 class="bi m-4"
-                style="font-size: 1.5rem; --bs-icon-link-transform: translateX(-0.25em);"
+                style="font-size: 1.5rem;
+
+ --bs-icon-link-transform: translateX(-0.25em);"
               />
             </button>
             <button
@@ -539,7 +541,7 @@ function slideNext() {
 </template>
 
 <style lang="scss" scoped>
-@import "bootstrap/scss/mixins/breakpoints";
+@import 'bootstrap/scss/mixins/breakpoints';
 
 $grid-breakpoints: (
   xs: 0,
@@ -548,23 +550,24 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1537px
+  xxxl: 1537px,
 );
 
 section .btn {
-  --primary: #BF9D7D;
-  --neutral: #FFFFFF;
+  --primary: #bf9d7d;
+  --neutral: #fff;
+
   height: clamp(4rem, 12vh, 7.25rem);
   padding: 5%;
 
   &:hover {
-    box-shadow: inset 48vw 0 0 0 var(--primary);
     color: var(--neutral) !important;
+    box-shadow: inset 48vw 0 0 0 var(--primary);
     transition-duration: 0.25s;
 
     .cta-deco {
-      background-color: var(--neutral) !important;
       width: 8vw;
+      background-color: var(--neutral) !important;
     }
   }
 
@@ -577,7 +580,9 @@ section .btn {
   width: 10vw;
   height: 1px;
   background-color: #000;
-  transition: background-color 0.25s ease-in-out, width 0.25s ease-in-out;
+  transition:
+    background-color 0.25s ease-in-out,
+    width 0.25s ease-in-out;
 
   @include media-breakpoint-down(md) {
     width: 5rem;
@@ -597,21 +602,21 @@ section .btn {
 
 .hero__intro {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   max-width: clamp(291px, 48vw, 924px);
   max-height: min(62vh, 672px);
   padding: 5.5%;
-  background-image: linear-gradient(to bottom, #FFFFFF00, #FFFFFF4D);
-  border-width: 1px 1px 0px 0px;
-  border-style: solid;
-  border-color: #F5F7F9;
-  border-radius: 80px;
+  background-image: linear-gradient(to bottom, #fff0, #ffffff4d);
   backdrop-filter: blur(6px);
+  border-color: #f5f7f9;
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  border-radius: 80px;
 
   @include media-breakpoint-down(md) {
-    transform: translateX(10%);
     height: 420px;
+    transform: translateX(10%);
   }
 }
 
@@ -629,8 +634,8 @@ section .btn {
   font-size: clamp(3rem, 5.2vw, 6.25rem);
 }
 .hero__intro-content p {
-  font-size: clamp(1rem, 1.7vw, 2rem);
   margin-bottom: min(5vh, 3.75rem);
+  font-size: clamp(1rem, 1.7vw, 2rem);
   white-space: nowrap;
 
   @include media-breakpoint-down(md) {
@@ -641,16 +646,16 @@ section .btn {
 .deco-line {
   width: 33vw;
   height: 2px;
-  background-image: linear-gradient(to right, #BE9C7C, #FFFFFF);
+  background-image: linear-gradient(to right, #be9c7c, #fff);
 }
 
 .hero .deco-line {
   @include media-breakpoint-down(md) {
+    z-index: 1;
     width: 2px;
     height: 83px;
-    z-index: 1;
-    background-image: linear-gradient(to bottom, #BE9C7C, #FFF);
     margin-bottom: 2.5rem;
+    background-image: linear-gradient(to bottom, #be9c7c, #fff);
   }
 }
 
@@ -662,8 +667,9 @@ section .btn {
   --parent-witdh: 1076;
   --width: 474;
   --percent-width: calc(var(--width) / var(--parent-witdh) * 100%);
-  width: var(--percent-width);
+
   flex-shrink: 0;
+  width: var(--percent-width);
 
   @include media-breakpoint-down(md) {
     width: 100%;
@@ -671,68 +677,68 @@ section .btn {
 }
 
 .news .container::before {
-  background-image: url('/images/deco-dot-group.svg');
-  content: '';
-  display: block;
   position: absolute;
   top: -20px;
   right: -120px;
+  display: block;
   width: 200px;
   height: 200px;
+  content: '';
+  background-image: url('/images/deco-dot-group.svg');
 
   @include media-breakpoint-down(md) {
-    background-image: url('/images/deco-dot-group-sm.svg');
-    width: 100px;
-    height: 100px;
     top: -40px;
     right: 24px;
+    width: 100px;
+    height: 100px;
+    background-image: url('/images/deco-dot-group-sm.svg');
   }
 }
 
 .news .container::after {
-  background-image: url('/images/deco-dot-group.svg');
-  content: '';
-  display: block;
   position: absolute;
   bottom: -200px;
   left: -100px;
+  display: block;
   width: 200px;
   height: 200px;
+  content: '';
+  background-image: url('/images/deco-dot-group.svg');
 
   @include media-breakpoint-down(md) {
-    background-image: url('/images/deco-dot-group-sm.svg');
-    width: 100px;
-    height: 100px;
     bottom: -140px;
     left: 24px;
+    width: 100px;
+    height: 100px;
+    background-image: url('/images/deco-dot-group-sm.svg');
   }
 }
 
 .about {
-  background-image: url('/images/home-about.png');
   height: 992px;
-  background-position-y: 120px;
+  background-image: url('/images/home-about.png');
   background-repeat: no-repeat;
+  background-position-y: 120px;
 
   @include media-breakpoint-down(md) {
-    background-position-y: 80px;
     height: 794px;
+    background-position-y: 80px;
   }
 }
 
 .about-content {
   max-width: 1044px;
-  background-image: linear-gradient(180deg, rgba(20, 15, 10, 0.8) 0%, rgba(190, 156, 124, 0.8) 100%);
+  background-image: linear-gradient(180deg, rgb(20 15 10 / 80%) 0%, rgb(190 156 124 / 80%) 100%);
   backdrop-filter: blur(10px);
-  border-width: 0px 0px 1px 1px;
+  border-color: #fff;
   border-style: solid;
-  border-color: #FFFFFF;
-  border-radius: 80px 80px 0px 80px;
+  border-width: 0 0 1px 1px;
+  border-radius: 80px 80px 0;
   transform: translateX(7vw);
 
   @include media-breakpoint-down(md) {
     height: 594px;
-    border-radius: 40px 40px 0px 40px;
+    border-radius: 40px 40px 0;
     transform: none;
   }
 }
@@ -751,23 +757,23 @@ section .btn {
   top: -24px;
   right: -80px;
   z-index: 2;
-  content: '';
   width: 375px;
   height: 84px;
+  content: '';
   background-image: url('/images/deco-line-group-horizontal-sm.svg');
   background-repeat: no-repeat;
 
   @include media-breakpoint-up(md) {
-    background-image: url('/images/deco-line-group-horizontal.svg');
+    top: -50px;
+    right: auto;
+    left: 430px;
     width: 1060px;
     height: 187px;
-    top: -50px;
-    left: 430px;
-    right: auto;
+    background-image: url('/images/deco-line-group-horizontal.svg');
   }
 
   @include media-breakpoint-up(lg) {
-    top: 0px;
+    top: 0;
     left: 430px;
   }
 
@@ -784,22 +790,22 @@ section .btn {
 
 .room-intro::after {
   position: absolute;
-  z-index: -1;
-  bottom: 265px;
   right: 0;
-  content: '';
+  bottom: 265px;
+  z-index: -1;
   width: 375px;
   height: 132px;
+  content: '';
   background-image: url('/images/deco-wave-bg-sm.svg');
   background-repeat: no-repeat;
 
   @include media-breakpoint-up(md) {
-    background-image: url('/images/deco-wave-bg.svg');
-    width: 1920px;
-    height: 86%;
+    right: auto;
     bottom: 0;
     left: -280px;
-    right: auto;
+    width: 1920px;
+    height: 86%;
+    background-image: url('/images/deco-wave-bg.svg');
   }
 
   @include media-breakpoint-up(lg) {
@@ -807,21 +813,22 @@ section .btn {
   }
 
   @include media-breakpoint-up(xl) {
-    height: 62.5%;
     left: -100px;
+    height: 62.5%;
   }
 
   @include media-breakpoint-up(xxxl) {
-    height: 677px;
     bottom: 0;
     left: 0;
+    height: 677px;
   }
 }
 
-.room-intro .swiper{
+.room-intro .swiper {
   --origin-width: 900;
   --container-width: 1920;
   --percent-width: calc(var(--origin-width) / var(--container-width) * 100vw);
+
   max-width: var(--percent-width);
   margin: 0;
 
@@ -843,9 +850,9 @@ section .btn {
     position: absolute;
     top: -40px;
     right: 80px;
-    content: '';
     width: 200px;
     height: 200px;
+    content: '';
     background-image: url('/images/deco-dot-group.svg');
   }
 }
@@ -855,9 +862,9 @@ section .btn {
     position: absolute;
     top: 55px;
     left: 40px;
-    content: '';
     width: 187px;
     height: 1068px;
+    content: '';
     background-image: url('/images/deco-line-group-vertical.svg');
   }
 }
@@ -871,7 +878,7 @@ section .btn {
 }
 
 .delicacy .card-body {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #140F0A 77.6%);
+  background-image: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, #140f0a 77.6%);
   backdrop-filter: blur(10px);
 }
 
@@ -887,8 +894,8 @@ section .btn {
 .swiper :deep(.swiper-button-next) {
   width: 56px;
   height: 56px;
-  background-color: #FFFFFF;
-  color: #4B4B4B;
+  color: #4b4b4b;
+  background-color: #fff;
   border-radius: 100px;
 
   @include media-breakpoint-down(md) {
@@ -905,8 +912,10 @@ section .btn {
   display: inline-block;
   width: 1em;
   height: 1em;
+
   --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m14 18l-6-6l6-6l1.4 1.4l-4.6 4.6l4.6 4.6z'/%3E%3C/svg%3E");
-  background-color: currentColor;
+
+  background-color: currentcolor;
   -webkit-mask-image: var(--svg);
   mask-image: var(--svg);
   -webkit-mask-repeat: no-repeat;
@@ -919,8 +928,10 @@ section .btn {
   display: inline-block;
   width: 1em;
   height: 1em;
+
   --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z'/%3E%3C/svg%3E");
-  background-color: currentColor;
+
+  background-color: currentcolor;
   -webkit-mask-image: var(--svg);
   mask-image: var(--svg);
   -webkit-mask-repeat: no-repeat;
@@ -936,13 +947,13 @@ section .btn {
 .swiper :deep(.swiper-pagination-bullet) {
   width: 32px;
   height: 4px;
-  background-color: #F1EAE4;
+  background-color: #f1eae4;
   border-radius: 100px;
   opacity: 1;
 }
 
 .swiper :deep(.swiper-pagination-bullet-active) {
   width: 60px;
-  background-color: #BF9D7D;
+  background-color: #bf9d7d;
 }
 </style>

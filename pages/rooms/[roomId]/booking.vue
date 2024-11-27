@@ -568,7 +568,7 @@ function confirmBooking() {
 </template>
 
 <style lang="scss" scoped>
-@import "bootstrap/scss/mixins/breakpoints";
+@import 'bootstrap/scss/mixins/breakpoints';
 
 $grid-breakpoints: (
   xs: 0,
@@ -577,7 +577,7 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1537px
+  xxxl: 1537px,
 );
 
 .title-deco {
@@ -586,19 +586,20 @@ $grid-breakpoints: (
 }
 
 .title-deco::before {
-  content: '';
   display: inline-block;
   width: 4px;
   height: 24px;
-  background-color: #BF9D7D;
-  border-radius: 10px;
   margin-right: 0.75rem;
+  content: '';
+  background-color: #bf9d7d;
+  border-radius: 10px;
 }
 
 .form-control::placeholder {
   --neutral-60: #909090;
-  color: var(--neutral-60);
+
   font-weight: 500;
+  color: var(--neutral-60);
 }
 
 .card-info {

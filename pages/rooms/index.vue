@@ -382,7 +382,7 @@ const roomImages = computed(() => {
 </template>
 
 <style lang="scss" scoped>
-@import "bootstrap/scss/mixins/breakpoints";
+@import 'bootstrap/scss/mixins/breakpoints';
 
 $grid-breakpoints: (
   xs: 0,
@@ -391,7 +391,7 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1537px
+  xxxl: 1537px,
 );
 
 .hero img {
@@ -408,16 +408,16 @@ $grid-breakpoints: (
 .deco-line {
   width: 33vw;
   height: 2px;
-  background-image: linear-gradient(to right, #BE9C7C, #FFFFFF);
+  background-image: linear-gradient(to right, #be9c7c, #fff);
 }
 
 .hero .deco-line {
   @include media-breakpoint-down(md) {
+    z-index: 1;
     width: 2px;
     height: 83px;
-    z-index: 1;
-    background-image: linear-gradient(to bottom, #BE9C7C, #FFF);
     margin-bottom: 2.5rem;
+    background-image: linear-gradient(to bottom, #be9c7c, #fff);
   }
 }
 
@@ -442,8 +442,8 @@ $grid-breakpoints: (
 .swiper :deep(.swiper-button-next) {
   width: 56px;
   height: 56px;
-  background-color: #FFFFFF;
-  color: #4B4B4B;
+  color: #4b4b4b;
+  background-color: #fff;
   border-radius: 100px;
 
   @include media-breakpoint-down(md) {
@@ -460,8 +460,10 @@ $grid-breakpoints: (
   display: inline-block;
   width: 1em;
   height: 1em;
+
   --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m14 18l-6-6l6-6l1.4 1.4l-4.6 4.6l4.6 4.6z'/%3E%3C/svg%3E");
-  background-color: currentColor;
+
+  background-color: currentcolor;
   -webkit-mask-image: var(--svg);
   mask-image: var(--svg);
   -webkit-mask-repeat: no-repeat;
@@ -474,8 +476,10 @@ $grid-breakpoints: (
   display: inline-block;
   width: 1em;
   height: 1em;
+
   --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z'/%3E%3C/svg%3E");
-  background-color: currentColor;
+
+  background-color: currentcolor;
   -webkit-mask-image: var(--svg);
   mask-image: var(--svg);
   -webkit-mask-repeat: no-repeat;
@@ -495,13 +499,13 @@ $grid-breakpoints: (
 .swiper :deep(.swiper-pagination-bullet) {
   width: 32px;
   height: 4px;
-  background-color: #F1EAE4;
+  background-color: #f1eae4;
   border-radius: 100px;
   opacity: 1;
 }
 
 .swiper :deep(.swiper-pagination-bullet-active) {
   width: 60px;
-  background-color: #BF9D7D;
+  background-color: #bf9d7d;
 }
 </style>

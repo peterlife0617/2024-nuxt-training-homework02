@@ -14,21 +14,27 @@
       <div class="d-flex gap-4 mb-15">
         <div
           class="spinner-grow bg-neutral-100"
-          style="--bs-spinner-animation-speed: 1s"
+          style="
+
+--bs-spinner-animation-speed: 1s"
           role="status"
         >
           <span class="visually-hidden">Loading...</span>
         </div>
         <div
           class="spinner-grow bg-neutral-80"
-          style="--bs-spinner-animation-speed: 1.5s"
+          style="
+
+--bs-spinner-animation-speed: 1.5s"
           role="status"
         >
           <span class="visually-hidden">Loading...</span>
         </div>
         <div
           class="spinner-grow bg-neutral-60"
-          style="--bs-spinner-animation-speed: 2s"
+          style="
+
+--bs-spinner-animation-speed: 2s"
           role="status"
         >
           <span class="visually-hidden">Loading...</span>
@@ -56,7 +62,8 @@ $breakpoint-md: 768px;
   }
 }
 
-.spinner-grow, .spinner-border {
+.spinner-grow,
+.spinner-border {
   width: 12px;
   height: 12px;
 }

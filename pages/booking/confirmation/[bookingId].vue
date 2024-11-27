@@ -340,7 +340,7 @@ const { bookingId } = route.params
 </template>
 
 <style lang="scss" scoped>
-@import "bootstrap/scss/mixins/breakpoints";
+@import 'bootstrap/scss/mixins/breakpoints';
 
 $grid-breakpoints: (
   xs: 0,
@@ -349,7 +349,7 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1537px
+  xxxl: 1537px,
 );
 
 .rounded-3xl {
@@ -362,14 +362,15 @@ $grid-breakpoints: (
 }
 
 .title-deco::before {
-  --color: #BF9D7D;
-  content: '';
+  --color: #bf9d7d;
+
   display: inline-block;
   width: 4px;
   height: 24px;
+  margin-right: 0.75rem;
+  content: '';
   background-color: var(--color);
   border-radius: 10px;
-  margin-right: 0.75rem;
 }
 
 .title-deco:nth-child(2)::before {

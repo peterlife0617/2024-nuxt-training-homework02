@@ -32,12 +32,12 @@ if (event) {
 }
 
 .not-found h1 {
-  font-size: 3rem;
   margin-bottom: 1rem;
+  font-size: 3rem;
 }
 
 .not-found p {
-  font-size: 1.5rem;
   margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 </style>

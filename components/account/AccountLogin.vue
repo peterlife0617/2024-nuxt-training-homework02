@@ -86,7 +86,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import "bootstrap/scss/mixins/breakpoints";
+@import 'bootstrap/scss/mixins/breakpoints';
 
 $grid-breakpoints: (
   xs: 0,
@@ -95,18 +95,18 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1537px
+  xxxl: 1537px,
 );
 
-input[type="password"] {
+input[type='password'] {
   font: small-caption;
   font-size: 1.5rem;
 }
 
 input::placeholder {
-  color: #909090;
   font-size: 1rem;
   font-weight: 500;
+  color: #909090;
 
   @include media-breakpoint-down(md) {
     font-size: 14px;
@@ -119,7 +119,7 @@ input::placeholder {
 }
 
 .form-check-input:checked {
-  background-color: #BF9D7D;
-  border-color: #BF9D7D;
+  background-color: #bf9d7d;
+  border-color: #bf9d7d;
 }
 </style>

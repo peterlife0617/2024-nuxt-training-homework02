@@ -278,13 +278,14 @@ const isEditProfile = ref(false)
   border-radius: 1.25rem;
 }
 
-input[type="password"] {
+input[type='password'] {
   font: small-caption;
 }
 
 .form-control::placeholder {
   --neutral-60: #909090;
-  color: var(--neutral-60);
+
   font-weight: 500;
+  color: var(--neutral-60);
 }
 </style>

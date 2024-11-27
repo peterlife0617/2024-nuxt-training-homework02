@@ -1,0 +1,14 @@
+{
+  "ignorePaths": [
+    "*.svg",
+    ".gitignore",
+    ".npmrc",
+    ".husky/*",
+    ".vscode/*",
+    "auto-imports.d.ts",
+    "components.d.ts",
+    "pnpm-lock.yaml"
+  ],
+  "words": [
+  ]
+}

@@ -259,7 +259,9 @@ const roomId = 'a' // for navigation demo
             data-bs-toggle="modal"
             data-bs-target="#cancelModal"
             class="btn btn-outline-primary-100 w-50 py-4 fw-bold"
-            style="--bs-btn-hover-color: #fff"
+            style="
+
+--bs-btn-hover-color: #fff"
             type="button"
           >
             取消預訂
@@ -416,7 +418,9 @@ const roomId = 'a' // for navigation demo
 
         <button
           class="btn btn-outline-primary-100 py-4 fw-bold"
-          style="--bs-btn-hover-color: #fff"
+          style="
+
+--bs-btn-hover-color: #fff"
           type="button"
         >
           查看更多
@@ -447,7 +451,9 @@ const roomId = 'a' // for navigation demo
           <button
             type="button"
             class="btn btn-outline-primary-100 flex-grow-1 m-0 py-4 fw-bold"
-            style="--bs-btn-hover-color: #fff"
+            style="
+
+--bs-btn-hover-color: #fff"
             data-bs-dismiss="modal"
           >
             關閉視窗
@@ -465,7 +471,7 @@ const roomId = 'a' // for navigation demo
 </template>
 
 <style lang="scss" scoped>
-@import "bootstrap/scss/mixins/breakpoints";
+@import 'bootstrap/scss/mixins/breakpoints';
 
 $grid-breakpoints: (
   xs: 0,
@@ -474,7 +480,7 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1537px
+  xxxl: 1537px,
 );
 
 .rounded-3xl {
@@ -487,14 +493,15 @@ $grid-breakpoints: (
 }
 
 .title-deco::before {
-  --color: #BF9D7D;
-  content: '';
+  --color: #bf9d7d;
+
   display: inline-block;
   width: 4px;
   height: 24px;
+  margin-right: 0.75rem;
+  content: '';
   background-color: var(--color);
   border-radius: 10px;
-  margin-right: 0.75rem;
 }
 
 .title-deco:nth-child(2)::before {
@@ -502,8 +509,8 @@ $grid-breakpoints: (
 }
 
 .flex-item {
-  max-width: 97px;
   width: 100%;
+  max-width: 97px;
   white-space: nowrap;
 }
 
@@ -523,8 +530,8 @@ $grid-breakpoints: (
 
 .modal-content {
   @include media-breakpoint-down(md) {
-    border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
   }
 }
 </style>

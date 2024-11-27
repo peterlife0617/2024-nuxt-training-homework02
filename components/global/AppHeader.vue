@@ -137,7 +137,7 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss" scoped>
-@import "bootstrap/scss/mixins/breakpoints";
+@import 'bootstrap/scss/mixins/breakpoints';
 
 $grid-breakpoints: (
   xs: 0,
@@ -146,7 +146,7 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1537px
+  xxxl: 1537px,
 );
 
 .logo {
@@ -154,7 +154,7 @@ $grid-breakpoints: (
 }
 
 header {
-  transition: background-color .3s;
+  transition: background-color 0.3s;
 }
 
 header.scrolled {
@@ -167,48 +167,48 @@ header.scrolled {
     visibility: hidden;
 
     svg {
-      transition: opacity .3s;
+      transition: opacity 0.3s;
     }
 
     svg:nth-child(1) {
       position: absolute;
       top: 28px;
       right: 28px;
-      opacity: 1;
       visibility: visible;
+      opacity: 1;
     }
     svg:nth-child(2) {
-      opacity: 0;
       visibility: hidden;
+      opacity: 0;
     }
   }
   .navbar-toggler.collapsed {
     svg:nth-child(1) {
-      opacity: 0;
       visibility: hidden;
+      opacity: 0;
     }
     svg:nth-child(2) {
-      opacity: 1;
       visibility: visible;
+      opacity: 1;
     }
   }
 
   .navbar-collapse {
-    min-height: 100vh;
-    background-color: #140f0a;
     position: fixed;
     inset: 0;
-    opacity: 0;
+    min-height: 100vh;
     overflow: hidden;
-    transition: opacity .05s;
+    background-color: #140f0a;
+    opacity: 0;
+    transition: opacity 0.05s;
   }
   .navbar-collapse.show {
     opacity: 1;
   }
   .navbar-nav {
-    height: 100%;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 100%;
     text-align: center;
 
     a {
@@ -219,9 +219,9 @@ header.scrolled {
 
 .dropdown-menu {
   --bs-dropdown-min-width: 16rem;
-  --bs-dropdown-link-hover-color: #BF9D7D;
-  --bs-dropdown-link-hover-bg: #F7F2EE;
+  --bs-dropdown-link-hover-color: #bf9d7d;
+  --bs-dropdown-link-hover-bg: #f7f2ee;
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #BF9D7D;
+  --bs-dropdown-link-active-bg: #bf9d7d;
 }
 </style>

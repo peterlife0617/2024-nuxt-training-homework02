@@ -90,7 +90,7 @@ function handleDateChange(bookingInfo: any) {
         </div>
         <button
           class="position-absolute btn btn-primary-10 px-8 py-4 me-3 text-primary-100 border-primary-100 fw-bold rounded-3"
-          style="bottom: 40px; right: 40px;"
+          style=" right: 40px;bottom: 40px;"
           type="button"
         >
           看更多
@@ -104,7 +104,7 @@ function handleDateChange(bookingInfo: any) {
         >
         <button
           class="position-absolute btn btn-primary-10 px-8 py-4 text-primary-100 border-primary-100 fw-bold rounded-3"
-          style="bottom: 23px; right: 12px;"
+          style=" right: 12px;bottom: 23px;"
           type="button"
         >
           看更多
@@ -583,7 +583,7 @@ function handleDateChange(bookingInfo: any) {
 </template>
 
 <style lang="scss" scoped>
-@import "bootstrap/scss/mixins/breakpoints";
+@import 'bootstrap/scss/mixins/breakpoints';
 
 $grid-breakpoints: (
   xs: 0,
@@ -592,7 +592,7 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1537px
+  xxxl: 1537px,
 );
 
 .rounded-3xl {
@@ -610,13 +610,13 @@ $grid-breakpoints: (
 }
 
 .title-deco::before {
-  content: '';
   display: inline-block;
   width: 4px;
   height: 24px;
-  background-color: #BF9D7D;
-  border-radius: 10px;
   margin-right: 0.75rem;
+  content: '';
+  background-color: #bf9d7d;
+  border-radius: 10px;
 }
 
 .flex-item {
@@ -627,7 +627,7 @@ $grid-breakpoints: (
   }
 }
 
-input[type="date"] {
+input[type='date'] {
   cursor: pointer;
 }
 </style>

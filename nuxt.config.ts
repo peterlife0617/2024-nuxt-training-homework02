@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       standalone: false,
     },
   },
-  modules: ['@nuxt/eslint'],
+  modules: ['@nuxt/eslint', '@nuxtjs/stylelint-module'],
   css: ['@/assets/styles/all.scss'],
   runtimeConfig: {
     public: {

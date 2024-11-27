@@ -82,7 +82,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import "bootstrap/scss/mixins/breakpoints";
+@import 'bootstrap/scss/mixins/breakpoints';
 
 $grid-breakpoints: (
   xs: 0,
@@ -91,7 +91,7 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1537px
+  xxxl: 1537px,
 );
 
 .hero-content {
@@ -116,14 +116,14 @@ $grid-breakpoints: (
 
 .nav-link.text-primary-100::after {
   position: absolute;
-  content: '';
-  left: 0;
   right: 0;
+  left: 0;
   display: block;
   width: 2rem;
   margin: 0 auto;
   margin-top: 0.5rem;
-  border-color: currentColor;
+  content: '';
+  border-color: currentcolor;
   border-bottom: 4px solid;
   border-radius: 10px;
 }
