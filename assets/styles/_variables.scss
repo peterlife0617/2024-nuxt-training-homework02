@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use 'sass:map';
+
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -419,11 +422,7 @@ $spacers: () !default;
   $spacers: map.merge(
     $spacers,
     (
-      $i:
-        $spacer *
-        (
-          $i * 0.25,
-        ),
+      $i: $spacer * $i * 0.25,
     )
   );
 }

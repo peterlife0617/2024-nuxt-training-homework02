@@ -12,6 +12,9 @@ export default defineNuxtConfig({
       standalone: false,
     },
   },
+  stylelint: {
+    lintOnStart: false,
+  },
   modules: ['@nuxt/eslint', '@nuxtjs/stylelint-module'],
   css: ['@/assets/styles/all.scss'],
   runtimeConfig: {
