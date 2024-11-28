@@ -123,7 +123,7 @@ const isEditProfile = ref(false)
               class="form-control text-neutral-100 fw-bold"
               :class="{ 'pe-none p-0 border-0': !isEditProfile, 'p-4': isEditProfile }"
               type="text"
-              value="Jessica Ｗang"
+              value="Jessica Wang"
             >
           </div>
 

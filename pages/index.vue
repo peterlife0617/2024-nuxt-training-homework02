@@ -664,9 +664,9 @@ section .btn {
 }
 
 .news picture {
-  --parent-witdh: 1076;
+  --parent-width: 1076;
   --width: 474;
-  --percent-width: calc(var(--width) / var(--parent-witdh) * 100%);
+  --percent-width: calc(var(--width) / var(--parent-width) * 100%);
 
   flex-shrink: 0;
   width: var(--percent-width);

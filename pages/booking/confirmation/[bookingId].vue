@@ -57,7 +57,7 @@ const { bookingId } = route.params
               <p class="mb-2 text-neutral-40 fw-medium">
                 姓名
               </p>
-              <span class="text-neutral-0 fw-bold">Jessica Ｗang</span>
+              <span class="text-neutral-0 fw-bold">Jessica Wang</span>
             </div>
             <div>
               <p class="mb-2 text-neutral-40 fw-medium">
