@@ -5,14 +5,14 @@ import { DatePicker } from 'v-calendar'
 import { useScreens } from 'vue-screen-utils'
 import 'v-calendar/style.css'
 
+const emit = defineEmits(['handleDateChange'])
+
 const props = defineProps({
   dateTime: {
     type: Object,
     required: true,
   },
 })
-
-const emit = defineEmits(['handleDateChange'])
 
 const { $bootstrap } = useNuxtApp()
 const modal = ref<ModalInstance | null>(null)
@@ -32,11 +32,6 @@ function openModal() {
 function closeModal() {
   modal.value?.hide()
 }
-
-defineExpose({
-  openModal,
-  closeModal,
-})
 
 const tempDate = reactive({
   date: {
@@ -112,6 +107,11 @@ function clearDate() {
   tempDate.date.end = null
   tempDate.key++
 }
+
+defineExpose({
+  openModal,
+  closeModal,
+})
 </script>
 
 <template>

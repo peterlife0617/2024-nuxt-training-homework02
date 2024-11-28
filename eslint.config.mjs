@@ -18,6 +18,7 @@ export default withNuxt(
             },
           },
         ],
+        'vue/define-macros-order': ['error', { order: ['definePage', 'defineModel', 'defineCustom', 'defineEmits', 'defineSlots'], defineExposeLast: true }],
       },
     },
   }),
