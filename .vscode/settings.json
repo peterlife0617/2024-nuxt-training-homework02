@@ -6,6 +6,7 @@
   // Auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
     "source.organizeImports": "never"
   },
 
@@ -50,12 +51,13 @@
 
   // I18n Ally
   "i18n-ally.keystyle": "nested",
-  "i18n-ally.localesPaths": ["src/lang"],
+  "i18n-ally.localesPaths": [],
   "i18n-ally.displayLanguage": "tw",
   "i18n-ally.sourceLanguage": "tw",
   "i18n-ally.localeCountryMap": {
     "tw": "tw"
   },
+
   // Stylelint Setting
   "css.validate": false,
   "less.validate": false,
