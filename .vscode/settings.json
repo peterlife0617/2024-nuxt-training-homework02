@@ -62,11 +62,13 @@
   "scss.validate": false,
   "stylelint.validate": ["css", "less", "postcss", "scss", "vue"],
 
+  // Conventional Commits Setting
   "conventionalCommits.gitmoji": false,
 
   // TypeScript Version
   "typescript.tsdk": "node_modules/typescript/lib",
 
+  // Tailwind CSS IntelliSense
   "tailwindCSS.experimental.classRegex": [
     ["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
   ]
